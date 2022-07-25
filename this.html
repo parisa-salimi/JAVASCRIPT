@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this</title>
+</head>
+<body>
+    <p id="this"></p>
+    <script>
+        var person = {
+            firstname :"Parisa",
+            lastname :"salimi",
+            age :"1996",
+
+            fullinformation: function (){
+                return this.firstname + " " +this.lastname+" "+"is born in "+this.age
+            }
+            };
+            document.getElementById("this").innerHTML = person.fullinformation();
+
+        
+    </script>
+</body>
+</html>
